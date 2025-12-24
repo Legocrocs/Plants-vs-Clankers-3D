@@ -1,0 +1,154 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6u5hosuitkdd"]
+
+[ext_resource type="PackedScene" uid="uid://mrybybu262vp" path="res://scenes/main_game/tiles.tscn" id="1_r0gx5"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Lanes" type="Node3D" parent="."]
+
+[node name="Lane0" type="Node3D" parent="Lanes"]
+
+[node name="Tile0" parent="Lanes/Lane0" instance=ExtResource("1_r0gx5")]
+
+[node name="Tile1" parent="Lanes/Lane0" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28, 0, 0)
+tile_atlas_coords = Vector2i(1, 1)
+
+[node name="Tile2" parent="Lanes/Lane0" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.56, 0, 0)
+
+[node name="Tile3" parent="Lanes/Lane0" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.84, 0, 0)
+
+[node name="Tile4" parent="Lanes/Lane0" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12, 0, 0)
+
+[node name="Tile5" parent="Lanes/Lane0" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0, 0)
+
+[node name="Tile6" parent="Lanes/Lane0" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68, 0, 0)
+
+[node name="Tile7" parent="Lanes/Lane0" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.96, 0, 0)
+
+[node name="Tile8" parent="Lanes/Lane0" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.24, 0, 0)
+
+[node name="Lane1" type="Node3D" parent="Lanes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.28)
+
+[node name="Tile0" parent="Lanes/Lane1" instance=ExtResource("1_r0gx5")]
+
+[node name="Tile1" parent="Lanes/Lane1" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28, 0, 0)
+
+[node name="Tile2" parent="Lanes/Lane1" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.56, 0, 0)
+
+[node name="Tile3" parent="Lanes/Lane1" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.84, 0, 0)
+
+[node name="Tile4" parent="Lanes/Lane1" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12, 0, 0)
+
+[node name="Tile5" parent="Lanes/Lane1" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0, 0)
+
+[node name="Tile6" parent="Lanes/Lane1" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68, 0, 0)
+
+[node name="Tile7" parent="Lanes/Lane1" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.96, 0, 0)
+
+[node name="Tile8" parent="Lanes/Lane1" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.24, 0, 0)
+
+[node name="Lane2" type="Node3D" parent="Lanes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.56)
+
+[node name="Tile0" parent="Lanes/Lane2" instance=ExtResource("1_r0gx5")]
+
+[node name="Tile1" parent="Lanes/Lane2" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28, 0, 0)
+
+[node name="Tile2" parent="Lanes/Lane2" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.56, 0, 0)
+
+[node name="Tile3" parent="Lanes/Lane2" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.84, 0, 0)
+
+[node name="Tile4" parent="Lanes/Lane2" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12, 0, 0)
+
+[node name="Tile5" parent="Lanes/Lane2" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0, 0)
+
+[node name="Tile6" parent="Lanes/Lane2" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68, 0, 0)
+
+[node name="Tile7" parent="Lanes/Lane2" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.96, 0, 0)
+
+[node name="Tile8" parent="Lanes/Lane2" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.24, 0, 0)
+
+[node name="Lane3" type="Node3D" parent="Lanes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.84)
+
+[node name="Tile0" parent="Lanes/Lane3" instance=ExtResource("1_r0gx5")]
+
+[node name="Tile1" parent="Lanes/Lane3" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28, 0, 0)
+
+[node name="Tile2" parent="Lanes/Lane3" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.56, 0, 0)
+
+[node name="Tile3" parent="Lanes/Lane3" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.84, 0, 0)
+
+[node name="Tile4" parent="Lanes/Lane3" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12, 0, 0)
+
+[node name="Tile5" parent="Lanes/Lane3" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0, 0)
+
+[node name="Tile6" parent="Lanes/Lane3" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68, 0, 0)
+
+[node name="Tile7" parent="Lanes/Lane3" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.96, 0, 0)
+
+[node name="Tile8" parent="Lanes/Lane3" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.24, 0, 0)
+
+[node name="Lane4" type="Node3D" parent="Lanes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.12)
+
+[node name="Tile0" parent="Lanes/Lane4" instance=ExtResource("1_r0gx5")]
+
+[node name="Tile1" parent="Lanes/Lane4" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28, 0, 0)
+
+[node name="Tile2" parent="Lanes/Lane4" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.56, 0, 0)
+
+[node name="Tile3" parent="Lanes/Lane4" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.84, 0, 0)
+
+[node name="Tile4" parent="Lanes/Lane4" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12, 0, 0)
+
+[node name="Tile5" parent="Lanes/Lane4" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0, 0)
+
+[node name="Tile6" parent="Lanes/Lane4" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68, 0, 0)
+
+[node name="Tile7" parent="Lanes/Lane4" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.96, 0, 0)
+
+[node name="Tile8" parent="Lanes/Lane4" instance=ExtResource("1_r0gx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.24, 0, 0)
+
+[node name="GridMap" type="GridMap" parent="."]

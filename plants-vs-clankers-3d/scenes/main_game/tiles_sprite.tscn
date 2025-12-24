@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=4 uid="uid://dgj3xf8q60ldv"]
+
+[ext_resource type="Texture2D" uid="uid://uk7wo4hl2t66" path="res://assets/tiles/grass_tiles.png" id="1_6jpf7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wtlba"]
+texture = ExtResource("1_6jpf7")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+0:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_7hlox"]
+sources/0 = SubResource("TileSetAtlasSource_wtlba")
+
+[node name="TilesSprite" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAABAAAAAAAAAAEAAAAAAAEAAAABAAEAAAABAAEAAAACAAAAAAACAAAAAAACAAEAAAACAAEAAAADAAAAAAADAAAAAAADAAEAAAADAAEAAAA=")
+tile_set = SubResource("TileSet_7hlox")
