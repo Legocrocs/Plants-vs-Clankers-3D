@@ -14,3 +14,10 @@ config/name="Plants vs Clankers 3d"
 run/main_scene="uid://c6u5hosuitkdd"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[file_customization]
+
+folder_colors={
+"res://scenes/main_game/": "yellow",
+"res://scenes/towers/": "green"
+}

@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://c432rodc2p63p"]
+
+[ext_resource type="Script" uid="uid://bx8q7qxydr4hi" path="res://scenes/towers/beanshooter/beanshooter_sprite.gd" id="1_111ay"]
+[ext_resource type="Texture2D" uid="uid://gj46t7fdq1j4" path="res://assets/towers/beanshooter_sprite.png" id="1_c042o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c042o"]
+atlas = ExtResource("1_c042o")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_111ay"]
+atlas = ExtResource("1_c042o")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n4252"]
+atlas = ExtResource("1_c042o")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eupqa"]
+atlas = ExtResource("1_c042o")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_111ay"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c042o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_111ay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n4252")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eupqa")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="BeanshooterSprite" type="Node2D"]
+script = ExtResource("1_111ay")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(32, 32)
+sprite_frames = SubResource("SpriteFrames_111ay")
+animation = &"idle"
+frame_progress = 0.07950812

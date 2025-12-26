@@ -18,6 +18,21 @@ func _ready() -> void:
 	
 	if not Engine.is_editor_hint():
 		_setup_collision()
+		
+func _input(event):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if is_hovered and can_occupy():
+			_place_test_tower()
+
+func _place_test_tower():
+	var tower_scene = load("res://scenes/towers/tower_3D.tscn")
+	var new_tower = tower_scene.instantiate()
+	
+	get_parent().add_child(new_tower)
+	
+
+	occupy(new_tower)
+	print("Beanshooter (Mesh) placed at: ", grid_position)
 
 func _setup_collision():
 	var static_body = StaticBody3D.new()

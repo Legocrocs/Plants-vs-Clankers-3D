@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cafuvfkensmok"]
+
+[ext_resource type="Script" uid="uid://csjbpbqh22rc4" path="res://scenes/towers/scripts/tower_3d.gd" id="1_jp47s"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_jp47s"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="SphereMesh" id="SphereMesh_8v44o"]
+
+[node name="Tower3d" type="Node3D"]
+script = ExtResource("1_jp47s")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+size = Vector2i(64, 64)
+render_target_update_mode = 4
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture_filter = 0
+texture = SubResource("ViewportTexture_jp47s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.23, 0, 0, 0, 0.23, 0, 0, 0, 0.23, 0, 0.37, 0)
+visible = false
+mesh = SubResource("SphereMesh_8v44o")
