@@ -24,16 +24,22 @@ func _input(event):
 		if is_hovered and can_occupy():
 			_place_test_tower()
 
+# tiles.gd
+
 func _place_test_tower():
+	print("DEBUG: Spawning tower...")
 	var tower_scene = load("res://scenes/towers/tower_3D.tscn")
 	var new_tower = tower_scene.instantiate()
 	
+	# 1. Give it a name (so the sprite loads)
+	new_tower.tower_name_id = "beanshooter"
+	
+	# 2. Add it to the scene
 	get_parent().add_child(new_tower)
 	
-
 	occupy(new_tower)
-	print("Beanshooter (Mesh) placed at: ", grid_position)
-
+	print("DEBUG: Tower placed at ", new_tower.position)	
+		
 func _setup_collision():
 	var static_body = StaticBody3D.new()
 	static_body.name = "ClickableArea"

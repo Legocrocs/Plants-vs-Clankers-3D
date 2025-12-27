@@ -44,7 +44,7 @@ script = ExtResource("1_111ay")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(32, 32)
 sprite_frames = SubResource("SpriteFrames_111ay")
 animation = &"idle"
-frame_progress = 0.07950812
+frame_progress = 0.763707
+centered = false

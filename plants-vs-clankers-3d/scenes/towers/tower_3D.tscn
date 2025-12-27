@@ -12,12 +12,16 @@ script = ExtResource("1_jp47s")
 
 [node name="SubViewport" type="SubViewport" parent="."]
 transparent_bg = true
-size = Vector2i(64, 64)
+size = Vector2i(64, 16)
 render_target_update_mode = 4
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.70128286, 0)
+pixel_size = 0.1
+billboard = 1
 texture_filter = 0
 texture = SubResource("ViewportTexture_jp47s")
+hframes = 4
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.23, 0, 0, 0, 0.23, 0, 0, 0, 0.23, 0, 0.37, 0)
